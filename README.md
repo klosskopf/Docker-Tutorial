@@ -2,7 +2,7 @@
 console based mandelbrot generater
 
 build:
-make
+g++ -Wall -O3 -o mandelbrot mandelbrot.cpp
 
 run:
 ./mandelbrot <real-middle> <imag-middle> <zoom>
