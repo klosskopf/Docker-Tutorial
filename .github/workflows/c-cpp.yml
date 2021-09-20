@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: make
-      run: make
+    - name: checkout code
+      uses: actions/checkout@v2
+    - name: build
+      run: make -j
+    - name: upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report
+        path: mandelbrot
