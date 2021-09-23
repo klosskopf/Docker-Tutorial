@@ -35,7 +35,7 @@ void mandelbrot(double xmid, double ymid, double zoom, unsigned long long iterat
     struct winsize size;
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &size);
     int zeilen=size.ws_row-2;
-    int spalten=size.ws_col-10;
+    int spalten=size.ws_col-20;
 
     for(int x=0; x<spalten; x=x+10)
         {
