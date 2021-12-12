@@ -44,8 +44,8 @@ void mandelbrot(double xmid, double ymid, double zoom, unsigned long long iterat
     int spalten=size.ws_col-20;
     if (zeilen < 10 | spalten < 10)
     {
-        spalten = 200;
-        zeilen = 200;
+        spalten = 100;
+        zeilen = 30;
     }
 
     for(int x=0; x<spalten; x=x+10)
