@@ -1,3 +1,9 @@
+//Ts ts ts. Wer wird denn hier in andrer Leute Code schnüffeln?
+//Das hier ist schlechter Code.
+//Ich möchte nicht mit diesem Code in Verbindung gebracht werden.
+//Dieser Code ist nur hier, damit irgendwas hier ist.
+//Also husch husch, verschwinde und mach weiter mit der Übung
+
 #include <iostream>
 #include <iomanip>
 #include <complex>
