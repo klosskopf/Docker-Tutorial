@@ -1,0 +1,24 @@
+name: CI
+#execute this action on new commits on by hand
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch: 
+
+jobs:
+  build_mandelbrot:
+    #use a linux vm, that has docker installed
+    runs-on: ubuntu-latest
+    #use our own container
+    container: ghcr.io/<github_name>/mandelbrot
+    #inside the container run the following steps
+    steps:
+      - name: create a mandelbrot image, hust hust
+        run: |
+          echo "Making a mandelbrot"
+          /opt/mandelbrot/mandelbrot -0.8 0.2 5 > /root/mandelbrot.txt
+      - name: Upload The mandelbrot txt
+        uses: actions/upload-artifact@v2.3.0
+        with:
+          name: final_product
+          path: /root/mandelbrot.txt
