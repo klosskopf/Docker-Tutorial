@@ -1,0 +1,29 @@
+version: '0.1'
+services:
+  container1:
+    container_name: container_1
+    image: alpine
+    stdin_open: true
+    tty: true
+  container2:
+    container_name: container_2
+    image: alpine
+    stdin_open: true
+    tty: true
+    networks:
+      - intercon
+    #volumes:
+    #  - "storage:/foo"
+  container3:
+    container_name: container_3
+    image: alpine
+    stdin_open: true
+    tty: true
+    networks:
+      - intercon
+  
+networks:
+  intercon:
+
+#voulumes:
+#  storage:
