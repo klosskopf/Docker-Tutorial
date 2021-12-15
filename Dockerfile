@@ -5,8 +5,7 @@ RUN apt update -y
 RUN apt upgrade -y
 RUN apt install build-essential -y
 #get mandelbrot source
-RUN mkdir /opt/test
-COPY * /opt/mandelbrot
+COPY . /opt/mandelbrot
 #build mandelbrot
 WORKDIR /opt/mandelbrot
 RUN make
