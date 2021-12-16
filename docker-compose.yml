@@ -13,7 +13,7 @@ services:
     networks:
       - intercon
     #volumes:
-    #  - "storage:/foo"
+    #  - "./storage:/foo"
   container3:
     container_name: container_3
     image: alpine
@@ -24,6 +24,3 @@ services:
   
 networks:
   intercon:
-
-#voulumes:
-#  storage:

@@ -2,7 +2,7 @@ name: CI
 #execute this action on new commits on by hand
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch: 
 
 jobs:
